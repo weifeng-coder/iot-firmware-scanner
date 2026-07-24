@@ -1,25 +1,21 @@
 # IOT固件高危调用扫描工具 v1.0
 
-这是一个面向软著申报材料整理的独立项目包，包含 CLI 扫描器、Web UI、结构化 JSON 报告、HTML 报告、Markdown 报告、配置文件、运行脚本和用户手册。
+一个面向 IoT 固件安全分析的独立工具包，包含 CLI 扫描器、Web UI、结构化 JSON 报告、HTML 报告、Markdown 报告、配置文件、运行脚本和用户手册。
 
-## 软件定位
+## 工具定位
 
-本软件用于对 IoT 固件解包目录或固件镜像进行 ELF 文件识别，调用 radare2/r2pipe 分析危险函数引用，并按文件、风险等级、CGI/Web 相关性生成可读报告。
-
-建议软著名称：
-
-> IOT固件高危调用扫描工具 v1.0
+本工具用于对 IoT 固件解包目录或固件镜像进行 ELF 文件识别，调用 radare2/r2pipe 分析危险函数引用，并按文件、风险等级、CGI/Web 相关性生成可读报告。
 
 ## 目录结构
 
 ```text
-software copyright/
+.
 ├── firmware_scanner.py          # CLI 扫描器与报告生成核心
 ├── web_ui.py                    # 标准库 Web UI
 ├── scanner_config.json          # 扫描规则与风险等级配置
 ├── requirements.txt             # Python 依赖说明
 ├── README.md                    # 项目说明
-├── docs/user_manual.md          # 用户手册/软著文档素材
+├── docs/user_manual.md          # 用户手册
 ├── scripts/run_scan.ps1         # Windows PowerShell 扫描脚本
 ├── scripts/run_web_ui.ps1       # Windows PowerShell Web UI 启动脚本
 ├── scripts/run_scan.sh          # Linux/macOS 扫描脚本
@@ -105,16 +101,24 @@ Web UI 支持：
 python -m unittest discover -s tests -p "test*.py"
 ```
 
-## 软著材料建议
+## 主要功能特性
 
-建议在软著材料中突出以下原创功能：
+本工具具备以下核心能力：
 
-1. 固件 ELF 自动发现与目录过滤策略。
-2. CGI/Web 相关二进制优先排序。
-3. 危险函数规则配置与风险分级。
-4. 按文件分组的结构化 JSON 报告。
-5. HTML/Markdown 可视化报告生成。
-6. 标准库 Web UI 扫描与报告查看功能。
+1. **固件 ELF 自动发现**：智能识别固件目录中的 ELF 文件，支持目录过滤策略。
+2. **CGI/Web 相关二进制优先排序**：优先分析 Web 相关可执行文件，提高检测效率。
+3. **危险函数规则配置与风险分级**：支持自定义危险函数规则，按风险等级分类。
+4. **按文件分组的结构化 JSON 报告**：生成结构清晰的 JSON 格式扫描结果。
+5. **HTML/Markdown 可视化报告**：生成便于阅读和分享的 HTML 及 Markdown 格式报告。
+6. **标准库 Web UI**：提供轻量级 Web 界面，支持扫描任务提交与报告查看。
 
-第三方工具如 radare2、binwalk、r2pipe、python-magic 属于运行依赖，软件原创部分主要是扫描调度、规则配置、数据整理、报告结构和界面展示。
-# iot-firmware-scanner
+## 依赖说明
+
+本工具依赖以下第三方工具和库：
+
+- **radare2**：用于 ELF 文件分析和反汇编
+- **r2pipe**：Python 与 radare2 的交互接口
+- **binwalk**：用于固件镜像解包（可选）
+- **python-magic**：用于文件类型识别
+
+工具的核心原创部分为扫描调度引擎、规则配置体系、数据整理管道、报告生成框架及 Web 展示界面。

@@ -1,0 +1,19 @@
+{
+  "dangerous_functions": [
+    "strcpy", "strcat", "sprintf", "vsprintf",
+    "gets", "scanf", "sscanf", "memcpy", "memmove",
+    "system", "popen", "execve", "execvp",
+    "read", "recv", "getopt", "strncpy"
+  ],
+  "skip_dirs": ["/lib/", "/lib32/", "/lib64/", "/usr/lib/", "/usr/lib32/", "/usr/lib64/"],
+  "cgi_indicators": ["cgi-bin", "/cgi/", "/web/", "httpd", "lighttpd", "nginx", "boa", "uhttpd", ".cgi"],
+  "risk": {
+    "critical": ["execve", "execvp", "popen", "system"],
+    "high": ["gets", "memcpy", "memmove", "read", "recv", "scanf", "sprintf", "sscanf", "strcat", "strcpy", "vsprintf"]
+  },
+  "scan": {
+    "prefer_cgi": true,
+    "radare2_analysis_command": "aaa",
+    "disassembly_instruction_count": 10
+  }
+}

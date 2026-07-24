@@ -1,0 +1,17 @@
+{
+  "id": "DCS-935L_A1_FW_1.10.01_20161128_r4156_legacy_20260716_230735",
+  "firmwareName": "DCS-935L_A1_FW_1.10.01_20161128_r4156",
+  "folderName": "DCS-935L_A1_FW_1.10.01_20161128_r4156_legacy_20260716_230735",
+  "target": "/mnt/c/Users/Notfd404/Documents/百度网盘/模板_软著 -6.0版/IOT固件关系智能梳理系统/tools/uploads/DCS-935L_A1_FW_1.10.01_20161128_r4156.bin",
+  "outputDir": "/mnt/c/Users/Notfd404/Documents/百度网盘/模板_软著 -6.0版/IOT固件关系智能梳理系统/tools/real/outputs/DCS-935L_A1_FW_1.10.01_20161128_r4156_legacy_20260716_230735",
+  "createdAt": "2026-07-16T15:07:35.646Z",
+  "completedAt": "2026-07-16T15:07:35.646Z",
+  "generatedAt": "2026-07-16T15:07:35.870676+00:00",
+  "totalFindings": 3233,
+  "affectedFileCount": 128,
+  "cgiRelatedFileCount": 76,
+  "analyzedElfCount": 171,
+  "resultPath": "/mnt/c/Users/Notfd404/Documents/百度网盘/模板_软著 -6.0版/IOT固件关系智能梳理系统/tools/real/outputs/DCS-935L_A1_FW_1.10.01_20161128_r4156_legacy_20260716_230735/result.json",
+  "reportHtml": "/mnt/c/Users/Notfd404/Documents/百度网盘/模板_软著 -6.0版/IOT固件关系智能梳理系统/tools/real/outputs/DCS-935L_A1_FW_1.10.01_20161128_r4156_legacy_20260716_230735/report.html",
+  "reportMd": "/mnt/c/Users/Notfd404/Documents/百度网盘/模板_软著 -6.0版/IOT固件关系智能梳理系统/tools/real/outputs/DCS-935L_A1_FW_1.10.01_20161128_r4156_legacy_20260716_230735/report.md"
+}

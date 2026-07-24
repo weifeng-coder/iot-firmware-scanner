@@ -1,0 +1,23 @@
+{
+  "schema_version": "2.0",
+  "software": {
+    "name": "IOT固件高危调用扫描工具",
+    "version": "1.0"
+  },
+  "scan": {
+    "target": "/mnt/c/Users/Notfd404/Documents/百度网盘/模板_软著 -6.0版/IOT固件关系智能梳理系统/tools/uploads/DCS-932L_REVA_FIRMWARE_1.10.B3.ZIPZone.Identifier",
+    "extract_root": "/tmp/fwscan_bl_o4001",
+    "generated_at": "2026-07-17T03:31:11.441625+00:00",
+    "analyzed_elf_count": 0,
+    "finding_count": 0
+  },
+  "summary": {
+    "total_findings": 0,
+    "affected_file_count": 0,
+    "cgi_related_file_count": 0,
+    "risk_levels": {},
+    "dangerous_functions": {},
+    "top_files": []
+  },
+  "findings_by_file": []
+}
